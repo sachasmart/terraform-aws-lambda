@@ -254,6 +254,12 @@ variable "timeouts" {
   default     = {}
 }
 
+variable "vpc_ipv6_allowed_for_dual_stack" {
+  description = "Define whetherallow dual-stack endpoints to access the Lambda Function"
+  type        = bool
+  default     = false
+}
+
 ###############
 # Function URL
 ###############
